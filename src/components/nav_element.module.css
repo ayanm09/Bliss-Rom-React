@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  position: relative;
+}
+.text {
+  font-style: normal;
+  transition: 0.3s;
+  font-weight: 500;
+  margin-left: 72px;
+}
+
