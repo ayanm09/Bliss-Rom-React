@@ -26,7 +26,7 @@ const Home = () => {
       </Helmet>
       <Navbar rootClassName="rootClassName"></Navbar>
       <div className={styles['Hero']}>
-        <span className={styles['text']}>BlissRoms</span>
+        <span className={styles['text']}>Bliss Rom</span>
         <span className={` ${styles['text01']} ${projectStyles['h6-20']} `}>
           An open-source operating system based on Android with customizations,
           options and added security features.
@@ -268,7 +268,7 @@ const Home = () => {
           </div>
           <div className={styles['Rom']}>
             <h1 className={` ${styles['text37']} ${projectStyles['h5-24']} `}>
-              BlissRoms for mobile
+              Bliss Rom for mobile
             </h1>
             <span
               className={` ${styles['text38']} ${projectStyles['body-12']} `}
@@ -282,7 +282,7 @@ const Home = () => {
               className={styles['link2']}
             >
               <Button
-                Button="BlissRoms"
+                Button="Bliss Rom"
                 rootClassName="rootClassName2"
                 className={styles['component3']}
               ></Button>

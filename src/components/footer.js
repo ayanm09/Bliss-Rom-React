@@ -20,7 +20,7 @@ const Footer = (props) => {
               className={styles['image']}
             />
             <span className={` ${styles['text']} ${projectStyles['body-16']} `}>
-              <span>BlissRoms</span>
+              <span>Bliss Rom</span>
             </span>
           </div>
           <span className={styles['text02']}>
