@@ -14,10 +14,10 @@ const Member = (props) => {
           src={props.image_src}
           className={styles['image']}
         />
-        <h1 className={` ${styles['text']} ${projectStyles['h5-24']} `}>
+        <h1 className={` ${styles['text']} ${projectStyles['h6-20']} `}>
           {props.heading}
         </h1>
-        <span className={` ${styles['text1']} ${projectStyles['button-14']} `}>
+        <span className={` ${styles['text1']} ${projectStyles['body-12']} `}>
           {props.text}
         </span>
         <span
@@ -49,7 +49,7 @@ Member.defaultProps = {
   heading: 'Silene Tokyo',
   image_alt: 'image',
   image_src:
-    'https://images.unsplash.com/photo-1633190206143-e618bc3c0e8b?ixid=Mnw5MTMyMXwwfDF8YWxsfDE0fHx8fHx8Mnx8MTYzMzI4MjIyMw&ixlib=rb-1.2.1&h=1200',
+    'https://images.unsplash.com/photo-1633190206143-e618bc3c0e8b?ixid=Mnw5MTMyMXwwfDF8YWxsfDE0fHx8fHx8Mnx8MTYzMzI4MjIyMw&ixlib=rb-1.2.1&w=1500',
 }
 
 Member.propTypes = {

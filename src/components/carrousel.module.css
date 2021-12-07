@@ -1,0 +1,83 @@
+.Carrousel {
+  flex: 0 0 auto;
+  margin: var(--dl-space-space-oneandhalfunits);
+  display: flex;
+  min-height: 50vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.Title {
+  color: var(--dl-color-gray-white);
+  margin: var(--dl-space-space-oneandhalfunits);
+}
+.images {
+  flex: 1;
+  display: flex;
+  align-items: stretch;
+  flex-direction: row;
+  justify-content: center;
+}
+.GoLeft {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.icon {
+  fill: var(--dl-color-primary-700);
+  width: var(--dl-size-size-small);
+}
+.Slider {
+  flex: 1;
+  width: 824px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-self: stretch;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.SlidesContainer {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  max-width: 100%;
+  align-self: stretch;
+  align-items: center;
+  border-radius: 16px;
+  flex-direction: row;
+  justify-content: center;
+}
+.Left {
+  object-fit: cover;
+  object-position: center;
+}
+.Left1 {
+  object-fit: cover;
+  object-position: center;
+}
+.Mid {
+  object-fit: cover;
+  object-position: center;
+}
+.Right {
+  object-fit: cover;
+  object-position: center;
+}
+.Right1 {
+  object-fit: cover;
+  object-position: center;
+}
+.GoRight {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.icon2 {
+  fill: var(--dl-color-primary-700);
+  width: var(--dl-size-size-small);
+}

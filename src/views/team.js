@@ -2,8 +2,7 @@ import React from 'react'
 
 import { Helmet } from 'react-helmet'
 
-import NavTeam from '../components/nav_team'
-import Button from '../components/button'
+import NavbarTeam from '../components/navbar_team'
 import Member from '../components/member'
 import Footer from '../components/footer'
 import projectStyles from '../style.module.css'
@@ -24,37 +23,10 @@ const Team = () => {
           content="BlissRoms. An open-source operating system based on Android with customizations, options, and added security features."
         />
       </Helmet>
-      <nav className={` ${styles['Header']} ${projectStyles['Navbar']} `}>
-        <img
-          alt="logo"
-          src="/playground_assets/bliss%20logo1.svg"
-          className={styles['image']}
-        />
-        <div className={styles['container01']}>
-          <nav className={styles['Navelements']}>
-            <NavTeam rootClassName="rootClassName3"></NavTeam>
-            <NavTeam Home="Features" rootClassName="rootClassName8"></NavTeam>
-            <div className={styles['container02']}>
-              <span
-                className={` ${styles['text']} ${projectStyles['subtitle-16']} ${projectStyles['navelement']} `}
-              >
-                Team
-              </span>
-            </div>
-            <NavTeam Home="Blog" rootClassName="rootClassName6"></NavTeam>
-            <NavTeam Home="Gear" rootClassName="rootClassName5"></NavTeam>
-          </nav>
-        </div>
-        <div className={styles['BtnGroup']}>
-          <Button rootClassName="rootClassName6"></Button>
-        </div>
-        <svg viewBox="0 0 1024 1024" className={styles['icon']}>
-          <path d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path>
-        </svg>
-      </nav>
+      <NavbarTeam rootClassName="rootClassName"></NavbarTeam>
       <div className={styles['Herosection']}>
-        <div className={styles['container03']}>
-          <span className={styles['text01']}>
+        <div className={styles['container01']}>
+          <span className={styles['text']}>
             <span>
               Meet
               <span
@@ -65,27 +37,27 @@ const Team = () => {
             </span>
             <span>the</span>
             <br></br>
-            <span className={styles['text05']}>Developer</span>
+            <span className={styles['text04']}>Developer</span>
             <br></br>
-            <span className={styles['text07']}>Team</span>
+            <span className={styles['text06']}>Team</span>
           </span>
-          <span className={` ${styles['text08']} ${projectStyles['h6-20']} `}>
+          <span className={` ${styles['text07']} ${projectStyles['h6-20']} `}>
             Our development team is a group of people that work together to
             create the blissful experience for you.
           </span>
         </div>
         <img
           alt="image"
-          src="/playground_assets/teamwork-1000h.png"
-          className={styles['image1']}
+          src="/playground_assets/teamwork-1500h.png"
+          className={styles['image']}
         />
       </div>
-      <div className={styles['container04']}>
-        <svg viewBox="0 0 1024 1024" className={styles['icon2']}>
+      <div className={styles['scroll-down']}>
+        <svg viewBox="0 0 1024 1024" className={styles['icon']}>
           <path d="M854 512l-342 342-342-342 62-60 238 238v-520h84v520l240-238z"></path>
         </svg>
-        <div className={styles['container05']}>
-          <span className={styles['text09']}>
+        <div className={styles['container02']}>
+          <span className={styles['text08']}>
             <span>Scroll</span>
             <br></br>
             <span>Down</span>
@@ -93,88 +65,100 @@ const Team = () => {
         </div>
       </div>
       <div className={styles['coremembers']}>
-        <span className={` ${styles['text13']} ${projectStyles['h3-36']} `}>
+        <span className={` ${styles['text12']} ${projectStyles['h3-36']} `}>
           Core Members
         </span>
+        <div className={styles['container03']}>
+          <div className={styles['container04']}>
+            <Member
+              text="Founder / CEO / Lead Developer"
+              heading="Jackeagle"
+              image_src="https://administrators.blissroms.org/storage/uploads/avatar/jackeagle_1615397360.jpeg"
+              rootClassName="rootClassName"
+            ></Member>
+            <Member
+              text="CFO / HR"
+              heading="Donna West"
+              image_src="https://administrators.blissroms.org/storage/uploads/avatar/donna_1615397691.jpg"
+              rootClassName="rootClassName3"
+            ></Member>
+          </div>
+          <div className={styles['container05']}>
+            <Member
+              text="Board Member"
+              heading="Antonio Luciano"
+              image_src="https://administrators.blissroms.org/storage/uploads/avatar/antonio_1615397746.jpeg"
+              rootClassName="rootClassName2"
+            ></Member>
+            <Member
+              text="Board Member"
+              heading="customworx"
+              image_src="https://administrators.blissroms.org/storage/uploads/avatar/custom_1615440519.jpeg"
+              rootClassName="rootClassName1"
+            ></Member>
+          </div>
+        </div>
         <div className={styles['container06']}>
-          <Member
-            text="Founder / CEO / Lead Developer"
-            heading="Jackeagle"
-            image_src="https://administrators.blissroms.org/storage/uploads/avatar/jackeagle_1615397360.jpeg"
-            rootClassName="rootClassName"
-          ></Member>
-          <Member
-            text="CFO / HR"
-            heading="Donna West"
-            image_src="https://administrators.blissroms.org/storage/uploads/avatar/donna_1615397691.jpg"
-            rootClassName="rootClassName3"
-          ></Member>
-          <Member
-            text="Board Member"
-            heading="Antonio Luciano"
-            image_src="https://administrators.blissroms.org/storage/uploads/avatar/antonio_1615397746.jpeg"
-            rootClassName="rootClassName2"
-          ></Member>
-          <Member
-            text="Board Member"
-            heading="customworx"
-            image_src="https://administrators.blissroms.org/storage/uploads/avatar/custom_1615440519.jpeg"
-            rootClassName="rootClassName1"
-          ></Member>
-        </div>
-        <div className={styles['container07']}>
-          <Member
-            text="Backend Developer / Lead Maintainer"
-            heading="Eric Park"
-            image_src="https://administrators.blissroms.org/storage/uploads/avatar/eric_1615432668.jpeg"
-            rootClassName="rootClassName4"
-          ></Member>
-          <Member
-            text="Lead Developer"
-            heading="Rohan Purohit"
-            image_src="https://administrators.blissroms.org/storage/uploads/avatar/rohan_1615432707.jpeg"
-            rootClassName="rootClassName5"
-          ></Member>
-          <Member
-            text="Server Administrator"
-            heading="Vaughn"
-            image_src="https://administrators.blissroms.org/storage/uploads/avatar/vaughn_1615441296.png"
-            rootClassName="rootClassName6"
-          ></Member>
-          <Member
-            text="Server Administrator"
-            heading="Deepak Sharma"
-            image_src="https://administrators.blissroms.org/storage/uploads/avatar/deepak_1615432964.jpeg"
-            rootClassName="rootClassName7"
-          ></Member>
-        </div>
-        <div className={styles['container08']}>
-          <Member
-            text="Wiki Lead"
-            heading="EvilVenÃ¸m"
-            image_src="https://administrators.blissroms.org/storage/uploads/avatar/evilvenom_1616695344.jpeg"
-            rootClassName="rootClassName8"
-          ></Member>
-          <Member
-            text="Graphics Designer"
-            heading="Bounty\n"
-            image_src="https://administrators.blissroms.org/storage/uploads/avatar/bounty_1628012042.jpg"
-            rootClassName="rootClassName9"
-          ></Member>
-          <Member
-            text="Graphics Designer"
-            heading="Adnan Faysal"
-            image_src="https://administrators.blissroms.org/storage/uploads/avatar/adnan_1632894945.jpg"
-            rootClassName="rootClassName10"
-          ></Member>
+          <div className={styles['container07']}>
+            <Member
+              text="Backend Developer / Lead Maintainer"
+              heading="Eric Park"
+              image_src="https://administrators.blissroms.org/storage/uploads/avatar/eric_1615432668.jpeg"
+              rootClassName="rootClassName4"
+            ></Member>
+            <Member
+              text="Lead Developer"
+              heading="Rohan Purohit"
+              image_src="https://administrators.blissroms.org/storage/uploads/avatar/rohan_1615432707.jpeg"
+              rootClassName="rootClassName5"
+            ></Member>
+          </div>
+          <div className={styles['container08']}>
+            <Member
+              text="Server Administrator"
+              heading="Vaughn"
+              image_src="https://administrators.blissroms.org/storage/uploads/avatar/vaughn_1615441296.png"
+              rootClassName="rootClassName6"
+            ></Member>
+            <Member
+              text="Server Administrator"
+              heading="Deepak Sharma"
+              image_src="https://administrators.blissroms.org/storage/uploads/avatar/deepak_1615432964.jpeg"
+              rootClassName="rootClassName7"
+            ></Member>
+          </div>
         </div>
         <div className={styles['container09']}>
-          <Member
-            text="Lead Developer"
-            heading="utzcoz"
-            image_src="https://administrators.blissroms.org/storage/uploads/avatar/utzoz_1615729927.png"
-            rootClassName="rootClassName14"
-          ></Member>
+          <div className={styles['container10']}>
+            <Member
+              text="Wiki Lead"
+              heading="EvilVenÃ¸m"
+              image_src="https://administrators.blissroms.org/storage/uploads/avatar/evilvenom_1616695344.jpeg"
+              rootClassName="rootClassName8"
+            ></Member>
+            <Member
+              text="Graphics Designer"
+              heading="Bounty\n"
+              image_src="https://administrators.blissroms.org/storage/uploads/avatar/bounty_1628012042.jpg"
+              rootClassName="rootClassName9"
+            ></Member>
+          </div>
+          <div className={styles['container11']}>
+            <Member
+              text="Graphics Designer"
+              heading="Adnan Faysal"
+              image_src="https://administrators.blissroms.org/storage/uploads/avatar/adnan_1632894945.jpg"
+              rootClassName="rootClassName10"
+            ></Member>
+            <Member
+              text="Lead Developer"
+              heading="utzcoz"
+              image_src="https://administrators.blissroms.org/storage/uploads/avatar/utzoz_1615729927.png"
+              rootClassName="rootClassName14"
+            ></Member>
+          </div>
+        </div>
+        <div className={styles['container12']}>
           <Member
             text="CTO / OS Lead Developer"
             heading="Jon West"

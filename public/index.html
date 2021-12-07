@@ -44,5 +44,81 @@
   </head>
   <body>
     <div id="app"></div>
+    <script>
+
+      (function () {
+        class Menu {
+          init = () => {
+            this.listenForUrlChanges()
+            this.getMenuElementsAndAddEvents()
+            return this;
+          };
+
+          getMenuElementsAndAddEvents = () => {
+            const mobileMenuElement = document.getElementsByClassName('teleport-menu-mobile')[0]
+            const closeMenuElement = document.getElementsByClassName('teleport-menu-close')[0]
+            const burgerMenuElement = document.getElementsByClassName('teleport-menu-burger')[0]
+
+            if (!burgerMenuElement) {
+              teleport.log("We're missing an element with a 'teleport-menu-mobile' class.");
+              return;
+            }
+
+
+          if (!mobileMenuElement) {
+              teleport.error(
+              `We're missing an element with a 'teleport-menu-mobile' class.`
+              );
+              return;
+          }
+
+          if (!closeMenuElement) {
+              teleport.error(
+              `We're missing an element with a 'teleport-menu-mobile' class.'`
+              );
+              return;
+          }
+
+          mobileMenuElement.addEventListener("click", () => {
+              mobileMenuElement.classList.remove("teleport-menu-show");
+          })
+          burgerMenuElement.addEventListener("click", () => {
+              mobileMenuElement.classList.add("teleport-menu-show");
+          });
+          closeMenuElement.addEventListener("click", () => {
+              mobileMenuElement.classList.remove("teleport-menu-show");
+          });
+          };
+
+          listenForUrlChanges = () => {
+            let url = location.href;
+            document.addEventListener('click', () => {
+              requestAnimationFrame(() => {
+                if (url !== location.href) {
+                  console.log('URL changed');
+                  this.getMenuElementsAndAddEvents()
+                  url = location.href
+                }
+              });
+            }, true);
+          }
+        }
+
+        const teleport = {
+          debug: false,
+          log: (msg, obj) => {
+            if (teleport.debug) {
+              console.log("teleport: " + msg, obj || "");
+            }
+          },
+          error: (msg, object) => {
+            console.error("teleport-error: " + msg, object);
+          },
+          Menu,
+        }
+
+        new Menu().init()
+      })()
+    </script>
   </body>
 </html>

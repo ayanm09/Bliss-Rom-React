@@ -26,6 +26,8 @@
 .image {
   width: 104px;
   height: 104px;
+  min-width: var(--dl-size-size-small);
+  min-height: var(--dl-size-size-small);
   object-fit: cover;
   border-radius: var(--dl-radius-radius-round);
 }
@@ -97,3 +99,35 @@
 
 
 
+@media(max-width: 479px) {
+  .container {
+    width: auto;
+  }
+  .container1 {
+    width: auto;
+    height: auto;
+    margin: 0px;
+    padding-top: var(--dl-space-space-unit);
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: var(--dl-space-space-unit);
+  }
+  .image {
+    width: var(--dl-size-size-medium);
+    height: var(--dl-size-size-medium);
+    min-width: var(--dl-size-size-small);
+    min-height: var(--dl-size-size-small);
+  }
+  .text1 {
+    width: var(--dl-size-size-medium);
+  }
+  .icon {
+    width: var(--dl-size-size-xsmall);
+  }
+  .icon2 {
+    width: var(--dl-size-size-xsmall);
+  }
+  .icon4 {
+    width: var(--dl-size-size-xsmall);
+  }
+}

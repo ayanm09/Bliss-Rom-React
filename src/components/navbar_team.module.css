@@ -1,0 +1,237 @@
+.image {
+  width: 60px;
+  height: 60px;
+}
+.container {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: space-between;
+  margin-right: var(--dl-space-space-oneandhalfunits);
+  flex-direction: column;
+}
+.Nav-Elements-Desktop {
+  flex: 0 0 auto;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  margin-left: 0px;
+  flex-direction: row;
+}
+.navlink {
+  display: contents;
+}
+.component {
+  text-decoration: none;
+}
+.navlink1 {
+  display: contents;
+}
+.component1 {
+  text-decoration: none;
+}
+.link {
+  display: contents;
+}
+.component2 {
+  text-decoration: none;
+}
+.link1 {
+  display: contents;
+}
+.component3 {
+  text-decoration: none;
+}
+.BtnGroup {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  text-decoration: none;
+}
+.component4 {
+  text-decoration: none;
+}
+.Burger-Menu {
+  display: none;
+}
+.icon {
+  width: var(--dl-size-size-xsmall);
+  height: var(--dl-size-size-xsmall);
+  display: none;
+  transition: 0.3s;
+}
+
+.Nav-Elements-Mobile {
+  flex: 0 0 auto;
+  display: none;
+  position: absolute;
+  align-self: center;
+  align-items: center;
+  margin-left: 0px;
+  flex-direction: column;
+}
+.navlink2 {
+  font-style: normal;
+  transition: 0.3s;
+}
+
+.navlink2:active {
+  color: var(--dl-color-primary-300);
+}
+.link3 {
+  font-style: normal;
+  transition: 0.3s;
+}
+
+.link3:active {
+  color: var(--dl-color-primary-300);
+}
+.navlink3 {
+  font-style: normal;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.navlink3:active {
+  color: var(--dl-color-primary-300);
+}
+.text {
+  font-style: normal;
+  transition: 0.3s;
+}
+
+.text:active {
+  color: var(--dl-color-primary-300);
+}
+.text1 {
+  font-style: normal;
+  transition: 0.3s;
+}
+
+.text1:active {
+  color: var(--dl-color-primary-300);
+}
+.BtnGroup1 {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  text-decoration: none;
+}
+.component5 {
+  text-decoration: none;
+}
+.container1 {
+  top: 32px;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+}
+.icon2 {
+  width: 24px;
+  height: 24px;
+}
+
+@media(max-width: 991px) {
+  .Nav-Elements-Desktop {
+    display: none;
+  }
+  .BtnGroup {
+    display: none;
+  }
+  .Burger-Menu {
+    display: flex;
+  }
+  .icon {
+    fill: #D9D9D9;
+    width: var(--dl-size-size-small);
+    height: var(--dl-size-size-small);
+    display: flex;
+  }
+  .Nav-Elements-Mobile {
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    align-items: flex-start;
+    margin-left: 0px;
+    padding-top: var(--dl-space-space-twounits);
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+    padding-bottom: var(--dl-space-space-twounits);
+    background-color: var(--dl-color-gray-black);
+  }
+  .BtnGroup1 {
+    display: none;
+  }
+  .container1 {
+    right: 32px;
+  }
+}
+@media(max-width: 767px) {
+  .icon {
+    fill: var(--dl-color-gray-900);
+    width: var(--dl-size-size-small);
+    height: var(--dl-size-size-small);
+  }
+}
+@media(max-width: 479px) {
+  .image {
+    width: auto;
+    height: auto;
+  }
+  .Burger-Menu {
+    display: flex;
+  }
+  .icon {
+    fill: var(--dl-color-gray-900);
+    width: 32px;
+    height: 32px;
+  }
+  .Nav-Elements-Mobile {
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--dl-color-gray-white);
+  }
+  .navlink2 {
+    color: var(--dl-color-primary-100);
+    margin-top: var(--dl-space-space-unit);
+    text-align: left;
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .link3 {
+    color: var(--dl-color-primary-100);
+    margin-top: var(--dl-space-space-unit);
+    text-align: left;
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .navlink3 {
+    color: var(--dl-color-primary-100);
+    margin-top: var(--dl-space-space-unit);
+    text-align: left;
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .text {
+    color: var(--dl-color-primary-100);
+    margin-top: var(--dl-space-space-unit);
+    text-align: left;
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .text1 {
+    color: var(--dl-color-primary-100);
+    margin-top: var(--dl-space-space-unit);
+    text-align: left;
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .BtnGroup1 {
+    display: flex;
+    margin-top: var(--dl-space-space-halfunit);
+    margin-bottom: var(--dl-space-space-halfunit);
+  }
+  .icon2 {
+    fill: var(--dl-color-primary-100);
+  }
+}
